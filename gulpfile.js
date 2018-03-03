@@ -168,7 +168,7 @@ gulp.task("webp", function() {
 // Минифицирует HTML файлы в папке build
 // Запуск `NODE_ENV=production npm start html` приведет к вставке SVG спрайта и минификации HTML
 gulp.task("html", function() {
-  console.log("---------- Вставляю SVG спрайт и минифицирую HTML");
+  console.log("---------- Минифицирую HTML");
   return gulp.src("source/*.html")
     .pipe(gulpIf(!isDev, htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest("build"))
