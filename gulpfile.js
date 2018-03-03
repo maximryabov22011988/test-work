@@ -6,7 +6,6 @@ var plumber = require("gulp-plumber");             // отслеживает о�
 var sourcemaps = require("gulp-sourcemaps");       // содержит информации об исходных файлах
 var sass = require("gulp-sass");                   // компилирует SASS в CSS
 var posthtml = require("gulp-posthtml");           // подключает плагины
-var include = require("posthtml-include");         // вставляет спрайты в html файлы
 var postcss = require("gulp-postcss");             // подключает плагины
 var autoprefixer = require("autoprefixer");        // подставляет вендорные префиксы в CSS
 var htmlmin = require("gulp-htmlmin");             // минифицирует HTML
@@ -126,7 +125,7 @@ gulp.task("scripts", function() {
 // Запуск `NODE_ENV=production npm start images` приведет к оптимизации изображений
 gulp.task("images", function() {
   console.log("---------- Копирую и оптимизирую изображения");
-  return gulp.src("source/img/**/*.{png,jpg,svg}", "!img/favicons/*.*")
+  return gulp.src(["!source/img/favicons/*", "source/img/**/*.{png,jpg,svg}"])
     .pipe(newer("build/img"))  // оставить в потоке только изменившиеся файлы
     .pipe(gulpIf(!isDev, imagemin([
       imagemin.optipng({optimizationLevel: 3}),
