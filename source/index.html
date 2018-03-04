@@ -145,27 +145,28 @@
           <li class="features__item">More recently with desktop publishing software like Aldus PageMaker</li>
         </ul>
       </section>
-      <div class="user-form">
-        <div class="login-form">
-          <h3 class="login-form__title">Member login</h3>
+      <section class="user-form">
+        <h3 class="user-form__title  visually-hidden">For our users</h3>
+        <section class="user-form__item  login-form">
+          <h4 class="login-form__title">Member login</h4>
           <form class="form" action="#" autocomplete="off" method="post">
             <input class="field" type="text" name="username" placeholder="User name"/>
-            <input class="field" type="password" name="password" placeholder="Password" />
-            <button class="login-form__btn btn">Log me in</button>
+            <input class="field" type="password" name="password" placeholder="Password"/>
+            <button class="login-form__btn  btn">Log me in</button>
           </form>
-        </div>
-        <div class="subscribe-form">
-          <h3 class="subscribe-form__title">Subscribe to our weekly newsletter</h3>
+        </section>
+        <section class="user-form__item  subscribe-form">
+          <h4 class="subscribe-form__title">Subscribe to our weekly newsletter</h4>
           <form class="form" action="#" autocomplete="off" method="post">
             <input class="field" type="email" name="email" placeholder="Email address"/>
-            <button class="subscribe-form__btn btn">Subscribe</button>
+            <button class="subscribe-form__btn  btn">Subscribe</button>
           </form>
-        </div>
-      </div>
+        </section>
+      </section>
     </main>
     <footer class="footer">
-      <div class="footer__item">
-        <ul class="footer__nav">
+      <div class="footer__block  footer__block--nav">
+        <ul class="footer__nav-list">
           <li class="footer__nav-item">
             <a class="footer__nav-link" href="#">About us</a>
           </li>
@@ -186,9 +187,9 @@
           </li>
         </ul>
       </div>
-      <div class="footer__item">
-        <h4 class="footer__title">About Us</h4>
-        <ul class="footer__nav">
+      <div class="footer__block  footer__block--nav">
+        <h3 class="footer__block-title">About Us</h3>
+        <ul class="footer__nav-list">
           <li class="footer__nav-item">
             <a class="footer__nav-link" href="#">About us</a>
           </li>
@@ -208,8 +209,8 @@
             <a href="#" class="footer__nav-link">Contact us</a></li>
         </ul>
       </div>
-      <div class="footer__item">
-        <h4 class="footer__title">Testimoanials</h4>
+      <div class="footer__block">
+        <h3 class="footer__block-title">Testimoanials</h3>
         <div class="reviews  slider">
           <div class="slider__viewport">
             <ul class="reviews__list  slider__list">
@@ -243,7 +244,7 @@
           <button class="slider__next  slider__next--small" type="button">Следующий отзыв</button>
         </div>
       </div>
-      <div class="footer__item">
+      <div class="footer__block">
         <a class="logo">Leo/-</a>
         <b>© cssauthor.com</b>
       </div>
