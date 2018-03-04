@@ -23,108 +23,231 @@
   <div class="page__wrapper">
     <header class="header">
       <a class="logo">
-        <img src="../img/logo.svg" width="245" height="87" alt="Company `s logo Leo"/>
+        <h1 class="logo__text">Leo/-</h1>
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Solutions</a>
+            <a class="main-nav__link" href="#">Solutions</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Products</a>
+            <a class="main-nav__link" href="#">Products</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Portfolio</a>
+            <a class="main-nav__link" href="#">Portfolio</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Contact</a>
+            <a class="main-nav__link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="content">
-      <h1 class="visually-hidden">Leo is a leader in the development of sites</h1>
-      <div class="promo  slider">
-        <div class="slider__viewport">
-          <ul class="promo__list  slider__list">
-            <li class="promo__item  slider__item">
-              <p class="promo__text">
+      <section class="promo">
+        <h2 class="promo__title  visually-hidden">Our offers</h2>
+        <div class="slider">
+          <div class="slider__viewport">
+            <ul class="promo__list  slider__list">
+              <li class="promo__item  slider__item">
                 <img src="../img/icons/icon-coffee.png" width="344" height="345" alt="Mug with hot coffee"/>
-                <span>Introducing</span>
-                <span>Something hot......</span>
-              </p>
-              <a class="promo__btn  btn" href="#">Try Demo</a>
+                <p class="promo__text">
+                  <span>Introducing</span>
+                  <span>Something hot......</span>
+                </p>
+                <a class="promo__btn  btn" href="#">Try Demo</a>
+              </li>
+              <li class="promo__item  slider__item">
+                <img src="../img/icons/icon-coffee.png" width="344" height="345" alt="Mug with hot coffee"/>
+                <p class="promo__text">
+                  <span>Introducing</span>
+                  <span>Something hot......</span>
+                </p>
+                <a class="promo__btn  btn" href="#">Try Demo</a>
+              </li>
+              <li class="promo__item  slider__item">
+                <img src="../img/icons/icon-coffee.png" width="344" height="345" alt="Mug with hot coffee"/>
+                <p class="promo__text">
+                  <span>Introducing</span>
+                  <span>Something hot......</span>
+                </p>
+                <a class="promo__btn  btn" href="#">Try Demo</a>
+              </li>
+            </ul>
+          </div>
+          <button class="slider__prev" type="button">Предыдущий слайд</button>
+          <button class="slider__next" type="button">Следующий слайд</button>
+        </div>
+      </section>
+      <section class="types-sites">
+        <h2 class="types-sites__title  visually-hidden">Types of sites</h2>
+        <div class="tabs">
+          <ul class="tabs__links" role="tablist">
+            <li class="tabs__links-wrap" role="presentation">
+              <a href="tab00" class="tabs__link" data-toggle="tab" role="tab">
+                <h3 class="tabs__title">Responsive Websites</h3>
+              </a>
             </li>
-            <li class="promo__item  slider__item">
-              <p class="promo__text">
-                <img src="../img/icons/icon-coffee.png" width="344" height="345" alt="Mug with hot coffee"/>
-                <span>Introducing</span>
-                <span>Something hot......</span>
-              </p>
-              <a class="promo__btn  btn" href="#">Try Demo</a>
+            <li class="tabs__links-wrap  tabs__link-wrap--active" role="presentation">
+              <a href="tab01" class="tabs__link" data-toggle="tab" role="tab">
+                <h3 class="tabs__title">e Commerce Websites</h3>
+              </a>
             </li>
-            <li class="promo__item  slider__item">
-              <p class="promo__text">
-                <img src="../img/icons/icon-coffee.png" width="344" height="345" alt="Mug with hot coffee"/>
-                <span>Introducing</span>
-                <span>Something hot......</span>
-              </p>
-              <a class="promo__btn  btn" href="#">Try Demo</a>
+            <li class="tabs__links-wrap" role="presentation">
+              <a href="tab02" class="tabs__link" data-toggle="tab" role="tab">
+                <h3 class="tabs__title">Daily blog Websites</h3>
+              </a>
+            </li>
+            <li class="tabs__links-wrap" role="presentation">
+              <a href="tab03" class="tabs__link" data-toggle="tab" role="tab">
+                <h3 class="tabs__title">Search based Websites</h3>
+              </a>
             </li>
           </ul>
+          <div class="tabs__content-wrapper">
+            <div class="tabs__content-item" id="tab00" role="tabpanel">
+              <img class="tab__image" src="../img/content-image/ipad.png" width="713" height="339" alt="Ipad with our works"/>
+              <span class="tabs__subtitle">Simply dummy text</span>
+              <p class="tabs__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p class="tabs__text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="tabs__content-item  tabs__content-item--active" id="tab01" role="tabpanel">
+              <img class="tab__image" src="../img/content-image/ipad.png" width="713" height="339" alt="Ipad with our works"/>
+              <span class="tabs__subtitle">Lorem Ipsum is simply dummy text</span>
+              <p class="tabs__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p class="tabs__text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="tabs__content-item" id="tab02" role="tabpanel">
+              <img class="tab__image" src="../img/content-image/ipad.png" width="713" height="339" alt="Ipad with our works"/>
+              <span class="tabs__subtitle">Lorem Ipsum has been the industry's</span>
+              <p class="tabs__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p class="tabs__text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="tabs__content-item" id="tab03" role="tabpanel">
+              <img class="tab__image" src="../img/content-image/ipad.png" width="713" height="339" alt="Ipad with our works"/>
+              <span class="tabs__subtitle">Lorem Ipsum passages</span>
+              <p class="tabs__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p class="tabs__text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__wrap-image">
+          <img src="../img/metro-ui.jpg" width="450" height="253" alt="Our portfolio"/>
+        </div>
+        <h2 class="features__title">Why choose us?</h2>
+        <ul class="features-list">
+          <li class="features__item">Lorem Ipsum is simply dummy text of the printing and typesetting</li>
+          <li class="features__item">Lorem Ipsum has been the industry's standard dummy text ever</li>
+          <li class="features__item">When an unknown printer took a galley of type and scrambled</li>
+          <li class="features__item">It has survived not only five centuries, but also the leap into electronic</li>
+          <li class="features__item">It was popularised in the 1960s with the release of Letraset sheets containing</li>
+          <li class="features__item">More recently with desktop publishing software like Aldus PageMaker</li>
+        </ul>
+      </section>
+      <div class="user-form">
+        <div class="login-form">
+          <h3 class="login-form__title">Member login</h3>
+          <form class="form" action="#" autocomplete="off" method="post">
+            <input class="field" type="text" name="username" placeholder="User name"/>
+            <input class="field" type="password" name="password" placeholder="Password" />
+            <button class="login-form__btn btn">Log me in</button>
+          </form>
+        </div>
+        <div class="subscribe-form">
+          <h3 class="subscribe-form__title">Subscribe to our weekly newsletter</h3>
+          <form class="form" action="#" autocomplete="off" method="post">
+            <input class="field" type="email" name="email" placeholder="Email address"/>
+            <button class="subscribe-form__btn btn">Subscribe</button>
+          </form>
         </div>
       </div>
-      <div class="types-sites  tabs">
-        <h2 class="types-sites__title  visually-hidden">Types of sites</h2>
-        <ul class="tabs__list">
-          <li class="tabs__item  tab">
-            <input id="responsive" type="radio" name="tabs">
-            <label for="responsive"></label>
-            <h3 class="tab__name">Responsive Websites</h3>
-            <div class="tab__content">
-              <img class="tab__image" src="../img/content-image/ipad.png" width="713" height="339" alt="Ipad with our works"/>
-              <h4 class="tab__title">Simply dummy text</h4>
-              <p class="tab__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <p class="tab__text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__item">
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">About us</a>
           </li>
-          <li class="tabs__item  tab">
-            <img class="tab__image" src="../img/content-image/ipad.png" width="713" height="339" alt="Ipad with our works"/>
-            <input id="ecommerce" type="radio" name="tabs" checked>
-            <label for="ecommerce"></label>
-            <h3 class="tab__name">e Commerce Websites</h3>
-            <div class="tab__content">
-              <h4 class="tab__title">Lorem Ipsum is simply dummy text</h4>
-              <p class="tab__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <p class="tab__text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Why us</a>
           </li>
-          <li class="tabs__item  tab">
-            <img class="tab__image" src="../img/content-image/ipad.png" width="713" height="339" alt="Ipad with our works"/>
-            <input id="blog" type="radio" name="tabs">
-            <label for="blog"></label>
-            <h3 class="tab__name">Daily blog Websites</h3>
-            <div class="tab__content">
-              <h4 class="tab__title">Lorem Ipsum has been the industry's</h4>
-              <p class="tab__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <p class="tab__text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Customer Stories</a>
           </li>
-          <li class="tabs__item  tab">
-            <img class="tab__image" src="../img/content-image/ipad.png" width="713" height="339" alt="Ipad with our works"/>
-            <input id="search" type="radio" name="tabs">
-            <label for="search"></label>
-            <h3 class="tab__name">Search based Websites</h3>
-            <div class="tab__content">
-              <h4 class="tab__title">Lorem Ipsum passages</h4>
-              <p class="tab__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <p class="tab__text">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Press Resources</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Press Releases</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Contact us</a>
           </li>
         </ul>
       </div>
-    </main>
-    <footer class="footer"></footer>
+      <div class="footer__item">
+        <h4 class="footer__title">About Us</h4>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">About us</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Why us</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Customer Stories</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Press Resources</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Press Releases</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h4 class="footer__title">Testimoanials</h4>
+        <div class="reviews  slider">
+          <div class="slider__viewport">
+            <ul class="reviews__list  slider__list">
+              <li class="reviews__item  slider__item">
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industr
+                standard dummy text ever since the 1500s,
+                when an unknown printer took a </p>
+                <b>Lorem Ipsum is simply<br/>
+                Owner, Lorem Ipsum</b>
+              </li>
+              <li class="reviews__item  slider__item">
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industr
+                standard dummy text ever since the 1500s,
+                when an unknown printer took a </p>
+                <b>Lorem Ipsum is simply<br/>
+                Owner, Lorem Ipsum</b>
+              </li>
+              <li class="reviews__item  slider__item">
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industr
+                standard dummy text ever since the 1500s,
+                when an unknown printer took a </p>
+                <b>Lorem Ipsum is simply<br/>
+                Owner, Lorem Ipsum</b>
+              </li>
+            </ul>
+          </div>
+          <button class="slider__prev  slider__prev--small" type="button">Предыдущий отзыв</button>
+          <button class="slider__next  slider__next--small" type="button">Следующий отзыв</button>
+        </div>
+      </div>
+      <div class="footer__item">
+        <a class="logo">Leo/-</a>
+        <b>© cssauthor.com</b>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
