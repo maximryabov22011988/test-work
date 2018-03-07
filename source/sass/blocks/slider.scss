@@ -4,6 +4,11 @@
   width: 1024px;
   padding-bottom: 70px;
   overflow: hidden;
+
+  &--small {
+    width: 316px;
+    padding-bottom: 0;
+  }
 }
 
 .slider__list {
@@ -32,17 +37,55 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &--small {
+    top: 3px;
+  }
 }
 
 .slider__prev {
   left: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/icon-arrow-left.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  &:hover::before {
+    opacity: 0.8;
+    transition: opacity $hover-animation $animation-function;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+    transition: opacity $active-animation $animation-function;
+  }
+
+  &--small {
+    left: 186px;
+    width: 16px;
+    height: 16px;
+
+    &::before {
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-footer-arrow-left.svg");
+    }
+  }
 }
 
 .slider__next {
   right: 90px;
-}
 
-.slider__prev {
   &::before {
     content: "";
     position: absolute;
@@ -52,7 +95,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    background-image: url("../img/icons/icon-arrow-left.svg");
+    background-image: url("../img/icon-arrow-right.svg");
     background-repeat: no-repeat;
     opacity: 0.2;
   }
@@ -66,32 +109,16 @@
     opacity: 0.1;
     transition: opacity $active-animation $animation-function;
   }
-}
 
-.slider__next {
-  margin-right: auto;
+  &--small {
+    left: 210px;
+    width: 16px;
+    height: 16px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-image: url("../img/icons/icon-arrow-right.svg");
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
-
-  &:hover::before {
-    opacity: 0.8;
-    transition: opacity $hover-animation $animation-function;
-  }
-
-  &:active::before {
-    opacity: 0.1;
-    transition: opacity $active-animation $animation-function;
+    &::before {
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-footer-arrow-right.svg");
+    }
   }
 }

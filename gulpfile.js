@@ -10,7 +10,6 @@ var postcss = require("gulp-postcss");             // подключает пл�
 var autoprefixer = require("autoprefixer");        // подставляет вендорные префиксы в CSS
 var htmlmin = require("gulp-htmlmin");             // минифицирует HTML
 var minify = require("gulp-csso");                 // минифицирует CSS
-var jshint = require("gulp-jshint");               // проверяет JS
 var concat = require("gulp-concat");               // объединяет файлы в один файл
 var uglify = require("gulp-uglify");               // минифицирует JS
 var imagemin = require("gulp-imagemin");           // оптимизирует изображения
@@ -106,9 +105,6 @@ gulp.task("scripts", function() {
     .pipe(gulpIf(isDev, sourcemaps.init()))
     .pipe(newer("build/js"))  // оставить в потоке только изменившиеся файлы
     .pipe(debug({title: "check js: "}))
-    .pipe(jshint())
-    .pipe(jshint.reporter("default"))
-    .pipe(jshint.reporter("fail"))
     .pipe(concat("scripts.min.js"))
     .pipe(gulpIf(!isDev, uglify()))
     .pipe(gulpIf(isDev, sourcemaps.write("/")))
@@ -125,7 +121,7 @@ gulp.task("scripts", function() {
 // Запуск `NODE_ENV=production npm start images` приведет к оптимизации изображений
 gulp.task("images", function() {
   console.log("---------- Копирую и оптимизирую изображения");
-  return gulp.src(["!source/img/favicons/*", "source/img/**/*.{png,jpg,svg}"])
+  return gulp.src(["!source/img/favicons/*", "source/img/*.{png,jpg,svg}", "source/img/icons/*.{png,jpg,svg}"])
     .pipe(newer("build/img"))  // оставить в потоке только изменившиеся файлы
     .pipe(gulpIf(!isDev, imagemin([
       imagemin.optipng({optimizationLevel: 3}),
@@ -137,7 +133,7 @@ gulp.task("images", function() {
       showFiles: true,
       showTotal: false,
     }))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("build/img"));
 });
 
 // Копирует, оптимизирует и конвертирует в формат webP контентные изображения в папке build

@@ -1,0 +1,36 @@
+.field {
+  box-sizing: border-box;
+  width: 145px;
+  padding: 0 10px;
+  font-family: $font-stack--main;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $gray-79;
+  border-radius: 0;
+  border: 0;
+  outline: none;
+
+  &::placeholder {
+    color: rgba($gray-79, 0.3);
+  }
+
+  &:hover::placeholder {
+    color: rgba($gray-79, 0.5);
+    transition: color $hover-animation $animation-function;
+  }
+
+  &:focus {
+    color: $gray-79;
+    box-shadow: 0 0 0 1px rgba($gray-0, 0.3);
+    transition: color $active-animation $animation-function, box-shadow $active-animation $animation-function;
+  }
+
+  &[disabled] {
+    background-color: rgba($gray-79, 0.5);
+  }
+
+  &[disabled]:hover {
+    background-color: rgba($gray-79, 0.5);
+  }
+}

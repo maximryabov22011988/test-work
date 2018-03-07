@@ -1,12 +1,111 @@
 .footer {
   flex-shrink: 0;
+  color: $gray-255;
   background: #242929 url("../img/bg-footer.jpg") 0 0 no-repeat;
 }
 
 .footer__wrapper {
   display: flex;
-  min-width: 1024px;
+  width: 1024px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 32px;
   padding-bottom: 46px;
+  padding-left: 49px;
+}
+
+.footer__block {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 101px;
+  margin-right: 90px;
+}
+
+.footer__block:last-child {
+  margin-right: 0;
+}
+
+.footer__block-title {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.footer__nav-list {
+  @include no-list-style();
+}
+
+.footer__nav-item {
+  margin-bottom: -1px;
+}
+
+.footer__nav-link {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.69;
+  text-decoration: none;
+  color: rgba($gray-255, 0.5);
+
+  &:hover {
+    color: rgba($gray-255, 1);
+    transition: color $hover-animation $animation-function;
+  }
+
+  &:active {
+    color: rgba($gray-255, 0.3);
+    transition: color $active-animation $animation-function;
+  }
+}
+
+.footer__block--nav:first-child {
+  margin-top: 31px;
+}
+
+.footer__block--reviews {
+  position: relative;
+  margin-right: 39px;
+}
+
+.footer__block--reviews .footer__block-title {
+  flex-grow: 0;
+  max-width: 316px;
+  margin-bottom: 13px;
+  padding-right: 150px;
+
+  @include text-limiter();
+}
+
+.footer__logo {
+  display: block;
+  margin-left: -8px;
+  margin-bottom: 17px;
+  padding-top: 6px;
+  font-weight: 400;
+  font-size: 119px;
+  line-height: 1;
+  color: rgba($gray-255, 0.2);
+  text-decoration: none;
+}
+
+.footer__logo[href="index.html"] {
+  color: rgba($gray-255, 0.2);
+  transition: color $default-animation $animation-function;
+
+  &:hover {
+    color: rgba($gray-255, 0.4);
+  }
+
+  &:active {
+    color: rgba($gray-255, 0.1);
+  }
+}
+
+.footer__copyright {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1;
+  color: rgba($gray-255, 0.8);
 }

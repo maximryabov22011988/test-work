@@ -1,0 +1,25 @@
+.user-form {
+  border-top: 1px solid rgba($gray-0, 0.11);
+}
+
+.user-form__wrapper {
+  display: flex;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+}
+
+.user-form__item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 470px;
+  margin-right: 68px;
+  font-size: 0;
+  line-height: 0;
+  border-radius: 8px;
+}
+
+.user-form__item:last-child {
+  margin-right: 0;
+}

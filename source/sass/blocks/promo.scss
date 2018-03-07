@@ -1,6 +1,5 @@
 .promo {
-  background-color: #485e66;
-  background: url("../img/bg-promo-pattern.png") repeat-x 0 20%, url("../img/bg-promo.jpg") no-repeat 0 20%;
+  background: transparent url("../img/bg-promo-pattern.png") repeat-x 0 20%, #ffffff url("../img/bg-promo.jpg") no-repeat 0 20%;
 }
 
 .promo__wrapper {
@@ -45,7 +44,7 @@
   color: $gray-255;
 }
 
-.promo__text span:first-child{
+.promo__text span:first-child {
   margin-bottom: 5px;
   font-size: 64px;
   line-height: 1;
