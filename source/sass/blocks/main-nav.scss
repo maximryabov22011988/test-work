@@ -19,12 +19,12 @@
   font-weight: 400;
   font-size: 23px;
   line-height: 1.2;
-  text-decoration-color: transparent;
+  text-decoration: none;
   color: $gray-255;
 
   &:hover {
     color: rgba($gray-255, 0.6);
-    transition: text-decoration-color $hover-animation $animation-function;
+    transition: color $hover-animation $animation-function;
   }
 
   &:active {
