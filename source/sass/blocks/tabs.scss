@@ -142,8 +142,7 @@
 }
 
 .tabs__content-item--active {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 .tabs__content-item picture {
@@ -157,6 +156,7 @@
 }
 
 .tabs__subtitle {
+  display: block;
   margin-bottom: 26px;
   font-weight: 400;
   font-size: 38px;
