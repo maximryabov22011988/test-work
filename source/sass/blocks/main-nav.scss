@@ -1,0 +1,34 @@
+.main-nav__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @include no-list-style();
+}
+
+.main-nav__item {
+  margin-right: 40px;
+}
+
+.main-nav__item:last-child {
+  margin-right: 0;
+}
+
+.main-nav__link {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.2;
+  text-decoration-color: transparent;
+  color: $gray-255;
+
+  &:hover {
+    color: rgba($gray-255, 0.6);
+    transition: text-decoration-color $hover-animation $animation-function;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: rgba($gray-255, 0.3);
+    transition: color $active-animation $animation-function;
+  }
+}

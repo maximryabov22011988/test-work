@@ -1,0 +1,12 @@
+.footer {
+  flex-shrink: 0;
+  background: #242929 url("../img/bg-footer.jpg") 0 0 no-repeat;
+}
+
+.footer__wrapper {
+  display: flex;
+  min-width: 1024px;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 46px;
+}
